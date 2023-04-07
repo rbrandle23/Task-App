@@ -5,15 +5,23 @@
         <meta charset="utf-8">
         <title>Tasker</title>
         <link rel="stylesheet" href="task.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1>Take Control of your life with Tasker.</h1>
+        <h1 class="task-title">Take control of your life with Tasker.</h1>
         <main>
             <div class="task-input">
-
+                <input type="text" id="input-bar"  name="input"  placeholder="What do you have planned today?" maxlength="200" required>
+                <button>Add</button>
             </div>
             <div class="task-container">
-
+                <div class="button-set">
+                    <button class="completed">Completed</button>
+                    <button class="removed">Removed</button>
+                    <button class="pending">Pending</button>
+                </div>
             </div>
         </main>
 
